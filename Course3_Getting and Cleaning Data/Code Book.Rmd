@@ -1,0 +1,48 @@
+---
+title: "Code Book"
+author: "Aditya Thawkar"
+date: "16 October 2020"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+activity_label <- stores in labels to be used later for adding description to variables and observations
+
+features <- conatins the all feature list
+
+test_subjects <- read in the file that contains id's of subjects per observation
+
+test_set <- read in the main features file for test data
+
+test_activities <- read in the activities for test_data
+
+test_data <- bind the test data set per observations
+
+test_sliced <- Take only columns that include the word mean, std and Subject.Id, Activity.Id
+
+final_test <- Add descriptive activity names to the activities in the test data set
+
+train_subjects  <- read in the file that contains id's of subjects per observation
+
+train_set <- read in the main features file for test data
+
+train_activities <- read in the activities for test_data
+
+train_data <- bind the test data set per observations
+
+train_sliced <- Take only columns that include the word mean, std and Subject.Id, Activity.Id
+
+final_train <- Add descriptive activity names to the activities in the test data set
+
+dataset <- stores the merged data of test and train dataset
+
+averagecol <- take the column names which will be aggregated
+
+melted_data <- contains melted data having multiple columns as index and some columns as measure                       variable as per the insructions given
+
+tidy_data <- conatins the required tidy dataset as per instructions
+
+tidydataset.txt <-file containing the tidy dataset
